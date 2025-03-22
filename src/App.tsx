@@ -16,9 +16,7 @@ function App() {
 
   return (
     <Router>
-      <div className="bg- text-white bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-[#101010] to-[#101010]
-">
-
+      <div className="min-h-screen bg-black text-white bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-[#101010] to-[#101010]">
         {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
         <Navbar />
         <Routes>
