@@ -61,7 +61,7 @@ return (
                   className="flex items-center gap-2 px-8 py-4 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors text-lg group-hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-500"
                 >
                   <DownloadIcon size={24} />
-                  View Free
+                  View Package
                 </button>
                 <div className="text-right">
                   <div className="text-3xl font-bold">{item.initialDownloads}</div>
