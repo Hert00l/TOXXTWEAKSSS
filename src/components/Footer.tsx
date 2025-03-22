@@ -49,7 +49,6 @@ export const Footer = () => {
           <div className="flex gap-6">
             <a href="https://discord.gg/toxtweaks" class="text-gray-400 hover:text-white transition-colors">Discord</a>
             <a href="https://www.youtube.com/toxtweak" class="text-gray-400 hover:text-white transition-colors">YouTube</a>
-
           </div>
         </div>
       </div>
