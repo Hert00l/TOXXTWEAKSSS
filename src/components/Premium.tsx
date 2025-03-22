@@ -179,21 +179,6 @@ export const Premium = () => {
               ))}
             </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center max-w-2xl mx-auto mb-24"
-          >
-            <h2 className="text-3xl font-bold mb-6">Ready to Optimize?</h2>
-            <p className="text-gray-400 mb-8">
-              Choose the package that best suits your needs and start experiencing better performance today.
-            </p>
-            <button className="px-8 py-4 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors">
-              Get Started Now
-            </button>
-          </motion.div>
         </div>
       </div>
       <Footer />
