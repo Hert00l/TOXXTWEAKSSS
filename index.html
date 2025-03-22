@@ -10,12 +10,12 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 <script>
-  // Sovrascrive console.log, console.warn e console.error per nascondere i messaggi
+  
   console.log = function() {};
   console.warn = function() {};
   console.error = function() {};
   
-  // Impedisce l'accesso alla funzione di ispezione della pagina (F12, DevTools)
+ 
   Object.defineProperty(window, 'devtools', {
     get: function() {
       return false;
@@ -23,7 +23,7 @@
     set: function() {}
   });
   
-  // Un altro approccio è disabilitare l'accesso al tasto F12
+ 
   document.onkeydown = function(e) {
     if (e.keyCode === 123) { // F12
       e.preventDefault();
