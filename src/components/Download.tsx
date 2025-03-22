@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom';
 
 const downloads = [
   {
-    title: 'Basic Package',
+    title: 'Free Package',
     description: 'Essential optimizations for better performance. Includes basic Windows tweaks, registry optimizations, and startup improvements. Our most popular package for users looking to enhance their system performance without complex configurations.',
     initialDownloads: 1234,
-    link: '/downloads/ToxTweak-Basic.zip'
+    link: '/premium'
   },
   {
-    title: 'Pro Package',
+    title: 'Ultimate Package',
     description: 'Advanced tweaks for maximum optimization. Includes everything in Basic plus GPU optimizations, network tweaks, and advanced system configurations. Perfect for gamers and power users who demand the absolute best performance.',
     initialDownloads: 567,
     link: '/premium'
@@ -30,15 +30,10 @@ export const Download = () => {
     );
 
     if (index === 0) {
-      // Basic package - direct download
-      const link = document.createElement('a');
-      link.href = downloads[index].link;
-      link.download = 'ToxTweak-Basic.zip';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      // Free package navigate to premium
+      navigate('/premium');
     } else {
-      // Pro package - navigate to premium page
+      // Pro package navigate to premium page
       navigate('/premium');
     }
   };
