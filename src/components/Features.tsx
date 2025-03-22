@@ -33,7 +33,7 @@ const features = [
     icon: '💾'
   },
   {
-    title: 'IImproves Network Latency',
+    title: 'Improves Network Latency',
     description: 'Improves Network Latency ...',
     icon: '🎮'
   }
