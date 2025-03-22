@@ -195,7 +195,7 @@ export const ProDetails = () => {
                 Back to Packages
               </Link>
               <button className="px-8 py-4 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors">
-                Get Pro Package
+                Get Free Package
               </button>
             </div>
           </motion.div>
