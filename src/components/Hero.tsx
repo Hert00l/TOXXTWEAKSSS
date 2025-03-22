@@ -56,11 +56,9 @@ export const Hero = () => {
     alt="PREVIEW"
     className="w-full h-auto object-contain rounded-xl border border-white/10 group-hover:border-purple-500/50 transition-colors duration-500"
   />
-  <div className="absolute inset-0 border-2 border-transparent rounded-xl 
-    group-hover:border-purple-500 group-hover:shadow-[0_0_4px_rgba(139,0,255,0.8),0_0_8px_rgba(139,0,255,0.8)] 
-    group-hover:scale-105 group-hover:translate-x-0.5 group-hover:translate-y-0.5 
-    transition-all duration-300 ease-in-out"></div>
+  <div className="absolute inset-0 rounded-xl pointer-events-none group-hover:scale-105 group-hover:translate-x-2 group-hover:translate-y-2 transition-all duration-300"></div>
 </motion.div>
+
 
 
 
