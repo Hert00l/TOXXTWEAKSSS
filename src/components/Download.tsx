@@ -38,8 +38,8 @@ export const Download = () => {
     }
   };
 
-  return (
-    <section id="Download" className="min-h-screen py-20">
+return (
+    <section id="download" className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16">Downloads</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -57,14 +57,14 @@ export const Download = () => {
               </div>
               <div className="flex items-center justify-between">
                 <button 
-                  onClick={() => handleDownload(index)}
+                  onClick={handleDownload}
                   className="flex items-center gap-2 px-8 py-4 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors text-lg group-hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-500"
                 >
                   <DownloadIcon size={24} />
-                  {index === 0 ? 'Download' : 'View Premium'}
+                  View Free
                 </button>
                 <div className="text-right">
-                  <div className="text-3xl font-bold">{downloadCounts[index]}</div>
+                  <div className="text-3xl font-bold">{item.initialDownloads}</div>
                   <div className="text-sm text-gray-400">Downloads</div>
                 </div>
               </div>
