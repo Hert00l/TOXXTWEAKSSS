@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Check, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const premiumPackages = [
   {
@@ -12,6 +13,7 @@ const premiumPackages = [
       'Premium Support',
       'Lifetime Updates',
     ],
+    detailsLink: '/pro-details'
   },
   {
     title: 'Ultimate',
@@ -23,18 +25,19 @@ const premiumPackages = [
       'Advanced Monitoring Tools',
       'Performance Analytics',
     ],
+    detailsLink: '/ultimate-details'
   },
 ];
 
 export const Premium = () => {
   return (
-    <div className="min-h-screen bg-black text-white bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-black to-black py-20">
+    <div className="min-h-screen bg-black text-white bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-black to-black pt-40">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-24"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Premium Packages
@@ -71,9 +74,17 @@ export const Premium = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-4 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors group-hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-500">
-                  Get Started
-                </button>
+                <div className="space-y-4">
+                  <button className="w-full py-4 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors group-hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-500">
+                    Get Started
+                  </button>
+                  <Link
+                    to={pkg.detailsLink}
+                    className="block w-full py-4 text-center border border-purple-500/50 rounded-lg hover:bg-purple-500/10 transition-all duration-500"
+                  >
+                    More Details
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
