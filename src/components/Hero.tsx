@@ -54,7 +54,7 @@ export const Hero = () => {
   <img
     src="https://sigmawire.net/i/03/jytni8.png"
     alt="PREVIEW"
-    className="w-full h-auto object-contain rounded-xl border border-white/10 group-hover:border-purple-500/50 transition-colors duration-500"
+    className="w-full h-auto object-contain rounded-xl0 border border-white/10 group-hover:border-purple-500/50 transition-colors duration-500"
   />
   <div className="absolute inset-0 rounded-xl pointer-events-none group-hover:scale-105 group-hover:translate-x-2 group-hover:translate-y-2 transition-all duration-300"></div>
 </motion.div>
