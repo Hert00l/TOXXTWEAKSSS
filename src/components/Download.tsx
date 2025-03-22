@@ -32,9 +32,27 @@ export const Download = () => {
     navigate('/premium');
   };
 
+  const handleNavClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 80, // Compensa la navbar fissa
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <section id="View Free" className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-80 backdrop-blur-md p-4 flex justify-between items-center z-50">
+        <div className="text-white text-2xl font-bold">ToxTweaks</div>
+        <div>
+          <a onClick={() => handleNavClick('View Free')} className="cursor-pointer text-gray-400 hover:text-white px-4">Downloads</a>
+          <a href="/premium" className="text-gray-400 hover:text-white px-4">Premium</a>
+          <a href="/contact" className="text-gray-400 hover:text-white px-4">Contact</a>
+        </div>
+      </nav>
+      <div className="max-w-7xl mx-auto px-4 pt-20">
         <h2 className="text-4xl font-bold text-center mb-16">Downloads</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {downloads.map((item, index) => (
