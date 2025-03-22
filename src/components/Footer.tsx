@@ -19,9 +19,9 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Products</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link to="/pro-details" className="hover:text-white transition-colors">Pro Package</Link></li>
+              <li><Link to="/pro-details" className="hover:text-white transition-colors">Free Package</Link></li>
               <li><Link to="/ultimate-details" className="hover:text-white transition-colors">Ultimate Package</Link></li>
-              <li><a href="#download" className="hover:text-white transition-colors">Basic Package</a></li>
+              <li><a href="#download" className="hover:text-white transition-colors">Coming soon</a></li>
             </ul>
           </div>
           
@@ -47,9 +47,8 @@ export const Footer = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400">© 2024 ToxTweak. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Discord</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">GitHub</a>
+            <a href="discord.gg/toxtweaks" className="text-gray-400 hover:text-white transition-colors">Discord</a>
+            <a href="youtube.com/toxtweak" className="text-gray-400 hover:text-white transition-colors">Youtube</a>
           </div>
         </div>
       </div>
