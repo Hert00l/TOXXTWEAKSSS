@@ -31,12 +31,18 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex flex-wrap justify-center gap-6"
         >
-          <button className="px-8 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-base">
-            View Our Products
-          </button>
-          <button className="px-8 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors text-base">
-            Our Discord
-          </button>
+<a href="https://discord.gg/toxtweaks" target="_blank" rel="noopener noreferrer">
+  <button className="px-8 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors text-base">
+    Our Discord
+  </button>
+</a>
+
+<a href="/premium">
+  <button className="px-8 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-base">
+    View Our Products
+  </button>
+</a>
+
         </motion.div>
 
         <motion.div
@@ -45,7 +51,6 @@ export const Hero = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-16 relative group cursor-pointer max-w-3xl mx-auto"
         >
-          <div className="absolute inset-0 bg-purple-500/20 rounded-2xl blur-xl group-hover:bg-purple-500/30 transition-colors duration-500"></div>
           <img
             src="https://sigmawire.net/i/03/jytni8.png"
             alt="PREVIEW"
