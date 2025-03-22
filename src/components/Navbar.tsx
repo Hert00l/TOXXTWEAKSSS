@@ -6,6 +6,7 @@ const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'Features', href: '#features' },
   { label: 'Download', href: '#download' },
+  { label: 'Pricing', href: '/premium' },
   { label: 'FAQ', href: '#faq' },
 ];
 
