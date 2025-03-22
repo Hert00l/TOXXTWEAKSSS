@@ -33,13 +33,13 @@ export const Hero = () => {
         >
 <a href="https://discord.gg/toxtweaks" target="_blank" rel="noopener noreferrer">
   <button className="px-8 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors text-base">
-    Our Discord
+    Get Premium
   </button>
 </a>
 
 <a href="/premium">
   <button className="px-8 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-base">
-    View Our Products
+    Try For Free
   </button>
 </a>
 
