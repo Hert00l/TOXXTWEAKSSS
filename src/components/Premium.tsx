@@ -23,8 +23,8 @@ const features = [
 
 const premiumPackages = [
   {
-    title: 'Pro',
-    price: '24.99',
+    title: 'Free',
+    price: '00.00',
     features: [
       'Advanced GPU Optimization',
       'Network Latency Reduction',
@@ -57,7 +57,7 @@ const testimonials = [
   },
   {
     name: "Sarah Chen",
-    role: "Content Creator",
+    role: "Client",
     content: "As a streamer, system performance is crucial. ToxTweak helps me maintain smooth streams without compromising game quality.",
     rating: 5
   },
