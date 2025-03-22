@@ -47,8 +47,13 @@ export const Footer = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400">© 2024 ToxTweak. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="discord.gg/toxtweaks" className="text-gray-400 hover:text-white transition-colors">Discord</a>
-            <a href="youtube.com/toxtweak" className="text-gray-400 hover:text-white transition-colors">Youtube</a>
+<a href="https://discord.gg/toxtweaks" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+  Discord
+</a>
+<a href="https://www.youtube.com/toxtweak" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+  YouTube
+</a>
+>
           </div>
         </div>
       </div>
