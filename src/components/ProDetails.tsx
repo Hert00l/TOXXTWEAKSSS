@@ -16,13 +16,13 @@ export const ProDetails = () => {
           >
             <div className="flex items-center justify-center gap-4 mb-6">
               <Zap className="w-12 h-12 text-purple-500" />
-              <h1 className="text-5xl md:text-6xl font-bold">Pro Package</h1>
+              <h1 className="text-5xl md:text-6xl font-bold">Free Package</h1>
             </div>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Advanced optimization suite designed for gamers and power users who demand superior performance and reliability.
             </p>
             <div className="mt-8 flex justify-center items-baseline gap-2">
-              <span className="text-5xl font-bold">$24.99</span>
+              <span className="text-5xl font-bold">$00.00</span>
               <span className="text-gray-400">one-time payment</span>
             </div>
           </motion.div>
@@ -137,7 +137,7 @@ export const ProDetails = () => {
                 <div className="relative border border-white/10 rounded-xl p-8 backdrop-blur-sm">
                   <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
                     <Memory className="w-8 h-8 text-purple-500" />
-                    Pro vs Ultimate
+                    Free vs Ultimate
                   </h2>
                   <div className="space-y-6">
                     <div className="flex items-center justify-between pb-4 border-b border-white/10">
@@ -186,7 +186,7 @@ export const ProDetails = () => {
             className="flex flex-col items-center gap-6 max-w-xl mx-auto text-center mb-16"
           >
             <h2 className="text-2xl font-bold">Ready to optimize your system?</h2>
-            <p className="text-gray-400">Get started with our Pro package and experience the difference in your system's performance.</p>
+            <p className="text-gray-400">Get started with our Free package and experience the difference in your system's performance.</p>
             <div className="flex flex-wrap justify-center gap-6">
               <Link
                 to="/premium"
