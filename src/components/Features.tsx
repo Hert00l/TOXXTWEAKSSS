@@ -3,33 +3,38 @@ import { useEffect } from 'react';
 
 const features = [
   {
-    title: 'CPU Optimization',
+    title: 'Optimizes CPU',
     description: 'Advanced CPU tweaks for better performance',
     icon: '⚙️'
   },
   {
-    title: 'Memory Boost',
+    title: 'Improves Input-Delay',
     description: 'Optimize RAM usage and system memory',
     icon: '⚡'
   },
   {
-    title: 'GPU Enhancement',
+    title: 'Optimizes GPU',
     description: 'Maximize graphics performance',
     icon: '💻'
   },
   {
-    title: 'Network Speed',
+    title: 'Optimizes RAM',
     description: 'Optimize network settings for gaming',
     icon: '🌐'
   },
   {
-    title: 'Windows Tweaks',
+    title: 'Improves Performance',
     description: 'System-level optimizations',
     icon: '🔧'
   },
   {
-    title: 'Auto Backup',
-    description: 'Automatic system restore points',
+    title: 'Improves System Latency',
+    description: 'Improves System Latency ...',
+    icon: '💾'
+  },
+  {
+    title: 'IImproves Network Latency',
+    description: 'Improves Network Latency ...',
     icon: '💾'
   }
 ];
