@@ -69,7 +69,7 @@ export const Features = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl font-bold text-center"
         >
-          Features
+          Benefits
         </motion.h2>
       </div>
       
