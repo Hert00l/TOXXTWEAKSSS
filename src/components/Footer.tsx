@@ -53,7 +53,6 @@ export const Footer = () => {
 <a href="https://www.youtube.com/toxtweak" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
   YouTube
 </a>
->
           </div>
         </div>
       </div>
