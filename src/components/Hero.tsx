@@ -47,8 +47,8 @@ export const Hero = () => {
         >
           <div className="absolute inset-0 bg-purple-500/20 rounded-2xl blur-xl group-hover:bg-purple-500/30 transition-colors duration-500"></div>
           <img
-            src="https://media.discordapp.net/attachments/1316524775820230706/1352406376189657119/image.png?ex=67de8ed6&is=67dd3d56&hm=47d39fa77db2224aad2fa216d8aadbd5fbe466d66f96b35dc53de832fb94de4d&=&format=webp&quality=lossless&width=892&height=513"
-            alt="Gaming Setup"
+            src="https://sigmawire.net/i/03/jytni8.png"
+            alt="PREVIEW"
             className="w-full h-auto object-contain rounded-xl border border-white/10 group-hover:border-purple-500/50 transition-colors duration-500"
           />
         </motion.div>
