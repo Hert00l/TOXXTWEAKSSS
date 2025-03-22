@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Download as DownloadIcon } from 'lucide-react';
 import { useState } from 'react';
@@ -6,13 +5,13 @@ import { useNavigate } from 'react-router-dom';
 
 const downloads = [
   {
-    title: 'Free Package',
+    title: 'Basic Package',
     description: 'Essential optimizations for better performance. Includes basic Windows tweaks, registry optimizations, and startup improvements. Our most popular package for users looking to enhance their system performance without complex configurations.',
     initialDownloads: 1234,
-    link: '/premium'
+    link: '/downloads/ToxTweak-Basic.zip'
   },
   {
-    title: 'Ultimate Package',
+    title: 'Pro Package',
     description: 'Advanced tweaks for maximum optimization. Includes everything in Basic plus GPU optimizations, network tweaks, and advanced system configurations. Perfect for gamers and power users who demand the absolute best performance.',
     initialDownloads: 567,
     link: '/premium'
@@ -25,31 +24,28 @@ export const Download = () => {
   );
   const navigate = useNavigate();
 
-  const handleDownload = () => {
-    navigate('/premium');
-  };
+  const handleDownload = (index: number) => {
+    setDownloadCounts(prev => 
+      prev.map((count, i) => i === index ? count + 1 : count)
+    );
 
-  const handleNavClick = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80, // Compensa la navbar fissa
-        behavior: 'smooth',
-      });
+    if (index === 0) {
+      // Basic package - direct download
+      const link = document.createElement('a');
+      link.href = downloads[index].link;
+      link.download = 'ToxTweak-Basic.zip';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      // Pro package - navigate to premium page
+      navigate('/premium');
     }
   };
 
   return (
-    <section id="View Free" className="min-h-screen py-20">
-      <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-80 backdrop-blur-md p-4 flex justify-between items-center z-50">
-        <div className="text-white text-2xl font-bold">ToxTweaks</div>
-        <div>
-          <a onClick={() => handleNavClick('View Free')} className="cursor-pointer text-gray-400 hover:text-white px-4">Downloads</a>
-          <a href="/premium" className="text-gray-400 hover:text-white px-4">Premium</a>
-          <a href="/contact" className="text-gray-400 hover:text-white px-4">Contact</a>
-        </div>
-      </nav>
-      <div className="max-w-7xl mx-auto px-4 pt-20">
+    <section id="download" className="min-h-screen py-20">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16">Downloads</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {downloads.map((item, index) => (
@@ -66,11 +62,11 @@ export const Download = () => {
               </div>
               <div className="flex items-center justify-between">
                 <button 
-                  onClick={handleDownload}
+                  onClick={() => handleDownload(index)}
                   className="flex items-center gap-2 px-8 py-4 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors text-lg group-hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-500"
                 >
                   <DownloadIcon size={24} />
-                  View Premium
+                  {index === 0 ? 'Download' : 'View Premium'}
                 </button>
                 <div className="text-right">
                   <div className="text-3xl font-bold">{downloadCounts[index]}</div>
