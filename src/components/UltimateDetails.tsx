@@ -5,7 +5,7 @@ import { Footer } from './Footer';
 
 export const UltimateDetails = () => {
   return (
-    <div className="bg-[#101010] text-white bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-black to-black">
+    <div className="bg-[#101010] text-white bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-[#101010] to-[#101010]">
       <div className="pt-40">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
