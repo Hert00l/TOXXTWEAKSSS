@@ -7,6 +7,8 @@ import { Features } from './components/Features';
 import { Download } from './components/Download';
 import { FAQ } from './components/FAQ';
 import { Premium } from './components/Premium';
+import { ProDetails } from './components/ProDetails';
+import { UltimateDetails } from './components/UltimateDetails';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,6 +28,8 @@ function App() {
             </main>
           } />
           <Route path="/premium" element={<Premium />} />
+          <Route path="/pro-details" element={<ProDetails />} />
+          <Route path="/ultimate-details" element={<UltimateDetails />} />
         </Routes>
       </div>
     </Router>
