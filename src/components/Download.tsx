@@ -61,7 +61,7 @@ export const Download = () => {
                   className="flex items-center gap-2 px-8 py-4 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors text-lg group-hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-500"
                 >
                   <DownloadIcon size={24} />
-                  {index === 0 ? 'View Free' : 'View Premium'}
+                  {index === 0 ? 'Download' : 'View Premium'}
                 </button>
                 <div className="text-right">
                   <div className="text-3xl font-bold">{downloadCounts[index]}</div>
