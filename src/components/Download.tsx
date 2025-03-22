@@ -29,18 +29,7 @@ export const Download = () => {
       prev.map((count, i) => i === index ? count + 1 : count)
     );
 
-    if (index === 0) {
-      // Basic package - direct download
-      const link = document.createElement('a');
-      link.href = downloads[index].link;
-      link.download = 'ToxTweak-Basic.zip';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } else {
-      // Pro package - navigate to premium page
-      navigate('/premium');
-    }
+    navigate('/premium');
   };
 
   return (
